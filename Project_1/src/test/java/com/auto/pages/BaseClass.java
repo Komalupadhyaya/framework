@@ -30,8 +30,10 @@ public class BaseClass {
 	public static ExtentReports report;
 	public ExtentTest logger;
 	
+	
 	@BeforeSuite
 	public void setUpSuite()
+	
 	{
 		Reporter.log("Setting up reports and test started", true);
 		
@@ -60,6 +62,8 @@ public class BaseClass {
 		
 		BrowserFactory.quitBrowser(driver);	
 	}
+	
+	
 	
 	@AfterMethod 
 	public void tearDowmMethod(ITestResult result) throws IOException 
